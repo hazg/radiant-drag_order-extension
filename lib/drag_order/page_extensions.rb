@@ -8,7 +8,7 @@ module DragOrder::PageExtensions
       end
       
       def self.children_of_with_slug_like(parent, slug)
-        find_all_by_parent_id(parent, :conditions => [ "slug LIKE '?%%'", slug ])
+        find_all_by_parent_id(parent, :conditions => [ 'slug LIKE ?', slug ])
       end
       
       before_validation_on_create :set_initial_position
