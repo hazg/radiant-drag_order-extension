@@ -22,7 +22,6 @@ Gem::Specification.new do |s|
     "app/views/admin/pages/_handle.html.haml",
     "app/views/admin/pages/_node.html.haml",
     "app/views/admin/pages/index.html.haml",
-    "config/routes.rb",
     "db/migrate/01_add_position_to_pages.rb",
     "db/migrate/02_add_default_position.rb",
     "drag_order_extension.rb",
