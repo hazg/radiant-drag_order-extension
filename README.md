@@ -10,7 +10,7 @@ Is now only compatible with Radiant above 0.9.1 (especially as a gem)
 
 ## Installation
 
-    git clone git://github.com/gerrit/radiant-drag-order.git vendor/extensions/drag_order
+    git clone https://github.com/gerrit/radiant-drag_order-extension.git vendor/extensions/drag_order
     
     rake radiant:extensions:drag_order:migrate
     rake radiant:extensions:drag_order:update
