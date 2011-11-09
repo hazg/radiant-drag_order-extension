@@ -1,4 +1,4 @@
-# DragOrder for Radiant 0.9.2+
+# DragOrder for Radiant
 
 Created by Bright 4, February 2009. Inspired by and based on Sean Cribbs' Reorder extension.
 
@@ -6,7 +6,7 @@ Created by Bright 4, February 2009. Inspired by and based on Sean Cribbs' Reorde
 
 Only designers and admins have the ability to re-order pages
 
-Is now only compatible with Radiant above 0.9.1 (especially as a gem)
+Is now only compatible with Radiant above 1.0.0rc3
 
 ## Installation
 
@@ -16,6 +16,12 @@ Is now only compatible with Radiant above 0.9.1 (especially as a gem)
     rake radiant:extensions:drag_order:update
 
 ## Version History
+
+### v0.5.1 - 2011-11-09
+
+* Made compatible with Radiant 1.0.0rc3
+
+### v0.5.0 - 2010-12-14
 
 ### v0.4.2 - 2010-11-27
 

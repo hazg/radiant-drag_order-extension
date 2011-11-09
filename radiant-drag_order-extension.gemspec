@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{radiant-drag_order-extension}
-  s.version = "0.5.0"
+  s.version = "0.5.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Dirk Kelly"]
-  s.date = %q{2010-12-14}
+  s.date = %q{2011-11-09}
   s.description = %q{Radiant DragOrder allows you to reorder pages funly}
   s.email = %q{dk@dirkkelly.com}
   s.extra_rdoc_files = [
@@ -46,16 +46,10 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/dirkkelly/radiant-drag_order-extension}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.4.2}
   s.summary = %q{Drag Order Extension for Radiant CMS}
-  s.test_files = [
-    "spec/controllers/pages_controller_spec.rb",
-    "spec/datasets/sort_pages.rb",
-    "spec/spec_helper.rb"
-  ]
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
