@@ -52,7 +52,7 @@ var SiteMapBehavior = Behavior.create({
   },
   
   readExpandedCookie: function() {
-    var matches = document.cookie.match(/expanded_rows=(.+?)(;|$)/);
+    var matches = document.cookie.match(/expanded_rows=(.?)(;|$)/);
     this.expandedRows = matches ? decodeURIComponent(matches[1]).split(',') : [];
   },
 
