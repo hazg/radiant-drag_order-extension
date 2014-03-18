@@ -23,7 +23,7 @@ module DragOrder
                 end
               rescue Exception => e # Without this resource controller will exception when it looks for Page.find('sort.js')
                 respond_to do |format|
-                  format.js { render :text => 'Could not sort Pages.', :status => :unprocessable_entity }
+                  format.js { render :text => 'Could not sort Pages.' } #, :status => :unprocessable_entity
                 end
               end
             end
