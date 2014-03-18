@@ -7,7 +7,8 @@ module DragOrder
           base.class_eval do
             
             before_filter :drag_assets, :only => [:index, :remove]
-            
+            skip_before_filter :verify_authenticity_token, :only => [:sort] 
+
             def sort
               begin
                 parent = Page.find(params[:parent_id])
@@ -23,7 +24,7 @@ module DragOrder
                 end
               rescue Exception => e # Without this resource controller will exception when it looks for Page.find('sort.js')
                 respond_to do |format|
-                  format.js { render :text => 'Could not sort Pages.' } #, :status => :unprocessable_entity
+                  format.js { render :text => 'Could not sort Pages.', :status => :unprocessable_entity }
                 end
               end
             end
